@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo last -F | grep -Ev '^(reboot|shutdown|runlevel|wtmp)' | head -n 5
+last -F | egrep -v '^(reboot|shutdown|runlevel|wtmp)' | head -n 5
